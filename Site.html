@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Requireman038 - Key Sistemi</title>
+    <style>
+        body { background-color: #121212; color: #fff; font-family: Arial, sans-serif; text-align: center; padding-top: 100px; }
+        .box { background: #1e1e1e; padding: 30px; border-radius: 10px; display: inline-block; border: 2px solid #7800ff; }
+        button { background: #00ff78; color: #000; border: none; padding: 10px 20px; font-weight: bold; cursor: pointer; border-radius: 5px; margin-top: 15px; }
+        input { padding: 10px; width: 250px; background: #2c2c2c; border: 1px solid #444; color: #fff; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Requireman038 Key Al</h2>
+        <p>Sisteme giriş yapmak için aşağıdaki keyi kullanabilirsin:</p>
+        <input type="text" value="requireL0CAL038" readonly id="keyInput">
+        <br>
+        <button onclick="copyKey()">Key'i Kopyala</button>
+    </div>
+
+    <script>
+        function copyKey() {
+            var copyText = document.getElementById("keyInput");
+            copyText.select();
+            document.execCommand("copy");
+            alert("Key kopyalandı: " + copyText.value);
+        }
+    </script>
+</body>
+</html>
+
